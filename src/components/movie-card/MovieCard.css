@@ -1,0 +1,86 @@
+.movie-card {
+  box-shadow: 0 0 5px #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.movie-card .image-container {
+  aspect-ratio: 0.75;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.movie-card .image-container .__image {
+  width: 100%;
+  aspect-ratio: 0.75;
+}
+
+.movie-card .content {
+  padding: 10px;
+}
+
+.movie-card .content .__name,
+.movie-card .content .__language {
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.movie-card .content .__language {
+  text-align: left;
+  margin-top: 8px;
+  padding-top: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.movie-card.loading {
+  background-color: var(--secondary-color);
+}
+
+.voting-container {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  padding: 3px 4px;
+  /* background-color: var(--primary-color); */
+  color: #ffffff;
+  border-radius: 5px 0 0 0;
+  font-size: 8px;
+}
+
+.date-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  padding: 3px 4px;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  border-radius: 0 0 0 5px;
+  font-size: 8px;
+}
+
+.date-container .__date {
+  display: flex;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  padding: 5px;
+  border-radius: 50%;
+  font-size: 8px;
+}
+
+.date-container .__play {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

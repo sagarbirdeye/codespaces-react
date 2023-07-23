@@ -1,0 +1,36 @@
+.movie-filters {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.left-filters,
+.right-filters {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.title {
+  font-family: 'Reenie Beanie', cursive;
+  font-weight: bold;
+}
+
+.__filter-btn {
+  text-transform: uppercase;
+}
+@media screen and (min-width: 480px) {
+  .movie-filters {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .left-filters {
+    justify-content: flex-start;
+  }
+
+  .right-filters {
+    justify-content: flex-end;
+  }
+}
