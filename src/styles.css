@@ -49,6 +49,10 @@
   color: #818181;
 }
 
+body {
+  background-color: #1c1c1c;
+}
+
 @media screen and (min-width: 990px) {
   .__btn {
     border: none;

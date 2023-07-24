@@ -32,11 +32,9 @@
 
 .options-container {
   position: absolute;
-  background: #ffffff;
+  background: rgba(39, 52, 50, 0.9);
   top: 33px;
   width: 100%;
-  border-radius: 4px;
-  box-shadow: 0 0 5px #ddd;
   padding: 8px 4px;
   z-index: 99;
   max-height: 90vh;

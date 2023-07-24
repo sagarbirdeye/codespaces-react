@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useState } from "react";
 import MovieFilters from "../../components/movie-filters/MovieFilters";
-// import MovieTrailer from "../../components/movie-trailer/MovieTrailer";
+import MovieTrailer from "../../components/movie-trailer/MovieTrailer";
 import Movies from "../../components/movies/Movies";
 import "./ComingMovies.css";
 
@@ -153,7 +153,7 @@ const ComingMovies = () => {
         leftFilters={leftFilters}
         filters={filters}
       />
-      {/* {selectedMovie && <MovieTrailer movie={selectedMovie} />} */}
+      {selectedMovie && <MovieTrailer movie={selectedMovie} />}
       <Movies selectMovie={handleSelectMovie} movies={getFilteredMovies} selectedMovie={selectedMovie}/>
     </div>
   );

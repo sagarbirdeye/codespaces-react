@@ -1,0 +1,134 @@
+.trailer-container-details {
+    width: 35%;
+    padding: 10px 14px;
+    text-align: left;
+    background-color: rgba(39, 52, 50, 0.8);
+    position: relative;
+}
+
+.trailer-container-details h1 {
+    font-size: 17px;
+    font-weight: 500;
+    color: #fff;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.movie-language-name {
+    font-size: 14px;
+    font-weight: 400;
+    color: #9d9f9c;
+    line-height: 1.2;
+    margin-bottom: 12px;
+}
+
+.genre-pills {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.genre-pill {
+    font-size: 9px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    padding: 4px 8px;
+    color: #ccc;
+}
+
+.rating-releaseDate-container {
+    margin-top: 10px;
+}
+
+.likes-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.likes-main-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.likes-main-wrapper img {
+    width: 13px;
+    filter: invert(1);
+}
+
+.likes-text-wrapper span {
+    display: block;
+    font-size: 11px;
+}
+
+.likes-text-wrapper span:nth-child(1) {
+    color: #fff;
+}
+
+.likes-text-wrapper span:nth-child(2) {
+    color: #9d9f9c;
+    margin-top: 3px;
+}
+
+.watch-rating-container {
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+    margin-top: 15px;
+    position: absolute;
+    left: 0;
+    width: calc(100% -  30px);
+    bottom: 15px;
+    padding: 10px;
+
+}
+
+.watching-rating-text {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.watching-rating-text .watching-image {
+    height:32px;
+    width: 32px;
+    border: 1px solid #40a458;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.watching-rating-text .watching-image img {
+    width: 16px
+}
+
+.watching-rating-text > span {
+    font-size: 11px;
+    color: #40a458;
+    display: flex;
+    margin: 8px 0;
+}
+
+.watching-rating-text > small {
+    font-size: 9px;
+    color: #40a458;
+}
+
+.watching-rating-text.wont-watch-wrapper .watching-image {
+    border: 1px solid #f9a203;
+}
+
+.watching-rating-text.wont-watch-wrapper > span, .watching-rating-text.wont-watch-wrapper > small {
+    color: #f9a203
+}
+
+.watching-rating-text.may-be-wrapper .watching-image {
+    border: 1px solid #b24142;
+}
+
+.watching-rating-text.may-be-wrapper > span, .watching-rating-text.may-be-wrapper > small {
+    color: #b24142;
+}

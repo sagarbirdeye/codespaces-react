@@ -21,7 +21,8 @@ const MovieCard = (props) => {
         />
         <div className="date-container">
           <div className="__date">{getDate}</div>
-          <div className="__play">
+        </div>
+        <div className="__play">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="22"
@@ -33,13 +34,12 @@ const MovieCard = (props) => {
               <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z" />
             </svg>
           </div>
-        </div>
         <div className="voting-container">
-          <div className="__voting">
+          <div className="__voting voting-icon-wrapper">
             <img src="likeIcon.svg" alt="like" className="like-icon"/>
             <span>{props["movie"]["wtsPerc"]} %</span>
           </div>
-          <div className="__voting">
+          <div className="__voting voting-text">
             <div className="__voting-text">{ props["movie"]["wtcCount"]} Voting</div>
           </div>
         </div>
